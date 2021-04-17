@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="testimonials.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">  
+    
+    <title>Hats for Her | Ladies Hat Hire</title>
+</head>
+
+<body>
+    <div id="about" class="jumbotron jumbotron-fluid" id="hatsforher">
+        <div class="container">
+            <h1 class="display-5">
+                <strong>Hats for Her</strong><em> of Berkshire</em>
+            </h1>
+            <p class="lead">
+                Beautiful, affordable headwear hire for every occasion.
+            </p>
+        </div>
+    </div>
+    <div id="navbar">
+        <nav class="navbar navbar-expand-md" <button class="navbar-toggler navbar-light" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hats.html">Hats & Fascinators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/clients.html">Our Clients<span
+                            class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/testimonials.html">Testimonials
+                            <span
+                            class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="text-center">
+        <h5 id="testimonials">Client Testimonials</h5>
+        <div class="d-inline-flex">
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="/Testimonials/1.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="/Testimonials/1.png" alt="Second slide">
+                  </div><div class="carousel-item ">
+                    <img class="d-block w-100" src="/Testimonials/1.png" alt="Third slide">
+                  </div>
+              </div>
+            </div>
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="/Testimonials/2.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="/Testimonials/3.png" alt="Second slide">
+                  </div><div class="carousel-item ">
+                    <img class="d-block w-100" src="/Testimonials/4.png" alt="Third slide">
+                  </div>
+              </div>
+            </div>
+        </div>
+
+    <div class="jumbotron text-center footer">
+        <p><small>Hats for Her &copy </small></p>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+     <script>
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    $('.filter').show('1000');
+                }
+                else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active"); 
+
+        });
+    </script>
+
+</body>
+
+</html>
