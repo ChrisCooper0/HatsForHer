@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
   <title>Hats for Her | Ladies Hat Hire</title>
 </head>
 
@@ -131,20 +132,24 @@
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <!-- Calendly inline widget end -->
   </div>
-  <div class="text-center">
-    <h6 class="contact">Alternatively, please contact us to arrange your appointment:</h6>
-    <p class="contact-details"><b>Email: </b> <a href="mailto:enquiries@hatsforher.co.uk">enquiries@hatsforher.co.uk</a>
-    </p>
-    <p class="contact-details"><b>Phone: </b><a href="tel:01344 779082">+44 (0) 1344 779082</a></p>
-    <address>Wiltshire Avenue, Crowthorne, Berkshire, RG45 6NR</address>
-  </div>
-
-  <div class="container">
-    <div id="map">
-      
+    <div class="container p-4">
+      <div class="row align-items-center">
+        <div class="col">
+            <div class="text-left ml-2">
+              <h6 class="contact">Alternatively, please contact us to arrange your appointment:</h6>
+              <p class="contact-details"><b>Email: </b> <a href="mailto:enquiries@hatsforher.co.uk">enquiries@hatsforher.co.uk</a>
+              </p>
+              <p class="contact-details"><b>Phone: </b><a href="tel:01344 779082">+44 (0) 1344 779082</a></p>
+              <address>Wiltshire Avenue, Crowthorne, Berkshire, RG45 6NR</address>
+            </div>
+        </div>
+        <div class="col ml-5">
+          <div id='map' class="align-items-center"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class=" instagram text-center">
+  <div class="instagram text-center">
     <p class="font-weight-bold">Follow us on <a href="https://www.instagram.com/hatsforher">Instagram</a> to see our
       daily <i>"Hat of the day"</i> and new additions to the collection.</p>
     <a href="https://www.instagram.com/hatsforher"> <img src="/instagram-apr21.png" alt="hatsforher"><a>
@@ -181,6 +186,23 @@
     });
 
   </script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hyaXNjb29wZXIwIiwiYSI6ImNrcHRmc2k4czByeXEyb21uNzlmcGFuYmEifQ.q2ED6k-YG058nwFSTG7HBA';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v11',
+    center: [-0.798107, 51.371915],
+    zoom: 12
+    });
+   
+    </script>
+    <script>
+      var marker = new mapboxgl.Marker({
+color: "#edd0ed"
+}).setLngLat([-0.798107, 51.371915])
+.addTo(map);
+    </script>
 </body>
 
 </html>

@@ -178,6 +178,13 @@ h6 {
 .contact-details {
   line-height: 1.5rem;
 }
+
+#map {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
 .instagram img {
   width: auto;
   height: 45vh;
