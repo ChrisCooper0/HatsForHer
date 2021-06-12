@@ -8,7 +8,7 @@
 
 body {
   background-color: #fff9ffff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .jumbotron {
@@ -175,7 +175,7 @@ h6 {
   transform: scale(1.075);
 }
 
-#contact {
+#calendly {
   padding-top: 60px;
 }
 
@@ -188,8 +188,8 @@ h6 {
 }
 
 #map {
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
   border-radius: 5px;
 }
 
