@@ -179,12 +179,13 @@ h6 {
   padding-top: 60px;
 }
 
-.contact {
-  margin-bottom: 20px;
+address {
+  margin: 25px 0px 15px 0px;
 }
 
-.contact-details {
-  line-height: 1.5rem;
+.what3words {
+  margin-left: -6px;
+  margin-top: -20px;
 }
 
 #map {
