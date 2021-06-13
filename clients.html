@@ -185,7 +185,12 @@
     </div>
 
     <div class="jumbotron text-center footer">
-      <p><small>Hats for Her &copy </small></p>
+      <p><small>Hats for Her &copy;
+        <span id="copyright">
+              <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          </span>
+      </div>
+      </small></p>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
